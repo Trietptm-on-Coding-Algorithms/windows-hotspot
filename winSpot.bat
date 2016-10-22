@@ -4,7 +4,7 @@
 TITLE winSpot - Windows WIFI Hotspot
 Color 0B
 
-SET v=2
+SET v=2.0
 
 cls
 echo.

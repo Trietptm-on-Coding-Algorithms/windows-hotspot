@@ -1,6 +1,6 @@
 # Changelog:
 
-v.2 (21 October 2016)
+v.2.0 (21 October 2016)
 * You can now save and load profiles!
 * Fixes.
 
