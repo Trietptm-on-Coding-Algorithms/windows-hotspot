@@ -10,8 +10,8 @@ You don't have to know any console commands, WinSpot will do everything for you!
 
 * Very easy to use - just provide your network SSID (name) and a PSK (password).
 * No online connection required for this to work.
-* Tiny package
-* No installation
+* Tiny package.
+* No installation required.
 
 ---
 
