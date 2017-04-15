@@ -1,31 +1,30 @@
-@echo off
+@echo OFF
 :start
 
-TITLE winSpot - Windows WIFI Hotspot
+TITLE WinSpot - Windows WIFI Hotspot
 Color 0B
 
-SET v=2.0
+SET v=3.0
 
 cls
 echo.
 echo Welcome to winSpot v.%v%!
 echo.
-echo [1] Start hotspot (s).
-echo [2] Stop hotspot (e).
-echo [3] Configure the hotspot (c).
-echo [4] Load a profile (p).
+echo [1] Start hotspot.
+echo [2] Stop hotspot.
+echo [3] Configure the hotspot.
+echo [4] Load a profile.
 echo.
-SET /P START=What would you like to do? (s/e/c/p): 
+SET /P START=What would you like to do? 
 
-if /i %START%==s (goto startnet)
-if /i %START%==e (goto stop)
-if /i %START%==c (goto config)
-if /i %START%==p (goto profile)
+if /i %START%==1 (goto startnet)
+if /i %START%==2 (goto stop)
+if /i %START%==3 (goto config)
+if /i %START%==4 (goto profile)
 if /i %START%==exit (exit)
 goto unrecog
 
 :startnet
-Color 09
 cls
 echo.
 echo [*] Starting hotspot...
@@ -35,7 +34,6 @@ timeout 5
 goto start
 
 :stop
-Color 0D
 cls
 echo.
 echo [*] Stopping hotspot...
@@ -45,23 +43,28 @@ timeout 5
 goto start
 
 :profile
-Color 0E
-SET "SSID="
-SET "PSK="
+SET SSID=
+SET PSK=
 cls
 echo.
 echo Profiles:
 echo.
 echo -------------------------------
-for %%a in (*.cmd) do (echo %%~na)
+for %%a in (*.hsp) do (echo %%~na)
 echo -------------------------------
 echo.
-SET /p profile=Choose your profile (full name): 
+SET /p profile= Choose your profile (full name): 
 echo.
-if exist %profile%.cmd (
-	call %profile%.cmd
-	netsh wlan set hostednetwork ssid=%SSID% key=%PSK%
-) else (echo ## Error! No such profile found. ##)
+if exist "%profile%.hsp" (
+	for /F "tokens=1 delims=," %%i in (%profile%.hsp) do (set SSID="%%i")
+	for /F "tokens=2 delims=," %%i in (%profile%.hsp) do (set PSK="%%i")
+) else (
+	COLOR 0C
+	echo.
+	echo # Error! No such profile found.
+	echo.
+)
+netsh wlan set hostednetwork ssid="%SSID%" key="%PSK%"
 timeout 5
 goto start
 
@@ -69,12 +72,12 @@ goto start
 Color 0E
 cls
 echo.
-SET /P SSID=Please choose an SSID (name): 
-SET /P PSK=Give your network a password (8-63 characters): 
+SET /P SSID= Please choose an SSID (single word!): 
+SET /P PSK= Give your network a password (8-63 characters, single word!): 
 echo.
-netsh wlan set hostednetwork ssid=%SSID% key=%PSK%
+netsh wlan set hostednetwork ssid="%SSID%" key="%PSK%"
 echo.
-SET /p SP=Save this configuration to a profile? (y/n): 
+SET /p SP= Save this configuration to a profile? (y/n): 
 if /i %SP%==y (goto savep)
 echo.
 timeout 5
@@ -82,18 +85,17 @@ goto start
 
 :savep
 echo.
-SET /p PN=Enter the profile name (1 word): 
-echo SET SSID=%SSID%>"%PN%.cmd"
-echo SET PSK=%PSK%>>"%PN%.cmd"
+SET /p PN= Enter any profile name (single word!): 
+echo %SSID%,%PSK%>"%PN%.hsp"
 cls
 echo.
-echo Saved the profile %PN%!
+echo Saved profile "%PN%".
 echo.
 timeout 5
 goto start
 
 :unrecog
-COLOR 04
+COLOR 0C
 cls
 echo.
 echo An error occured!
