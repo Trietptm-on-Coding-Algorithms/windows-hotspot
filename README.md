@@ -22,4 +22,4 @@ You don't have to know any console commands, WinSpot will do everything for you!
 
 ---
 
-© Aperture Diversion, Phoenix1747. 2017.
+Aperture Diversion, Phoenix1747. 2017.
