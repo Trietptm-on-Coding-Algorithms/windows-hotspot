@@ -1,4 +1,4 @@
-# WinSpot 
+# WinSpot
 ![latest version](https://img.shields.io/github/release/aperture-diversion/windows-hotspot.svg) ![issues](https://img.shields.io/github/issues/aperture-diversion/windows-hotspot.svg) ![Downloads](https://img.shields.io/github/downloads/aperture-diversion/windows-hotspot/latest/total.svg)
 
 
