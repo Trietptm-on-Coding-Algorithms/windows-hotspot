@@ -1,4 +1,4 @@
-# WinSpot ![latest version](https://img.shields.io/github/release/aperture-diversion/windows-hotspot.svg) ![license](https://img.shields.io/github/license/aperture-diversion/windows-hotspot.svg) ![issues](https://img.shields.io/github/issues/aperture-diversion/windows-hotspot.svg)
+# WinSpot ![latest version](https://img.shields.io/github/release/aperture-diversion/windows-hotspot.svg) ![license](https://img.shields.io/github/license/aperture-diversion/windows-hotspot.svg) ![issues](https://img.shields.io/github/issues/aperture-diversion/windows-hotspot.svg) [![Downloads](https://img.shields.io/github/downloads/aperture-diversion/windows-hotspot/latest/total.svg)]
 
 
 Lets you easily create a wireless hotspot with Windows 10 and earlier.
