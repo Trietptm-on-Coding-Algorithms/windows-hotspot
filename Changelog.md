@@ -1,5 +1,9 @@
 # Changelog:
 
+v.4.1 (27 September 2017)
+* Removed buggy profiles
+* Small changes
+
 v.3.0 (15 April 2017)
 * Better saving and loading.
 * Some other changes and fixes.
