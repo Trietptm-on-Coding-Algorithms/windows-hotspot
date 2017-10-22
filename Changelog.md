@@ -1,8 +1,13 @@
 # Changelog:
 
+v.5 (22 October 2017)
+* The SSID and PSK can now consist of multiple words!
+* Check for admin rights.
+* Some fixes.
+
 v.4.1 (27 September 2017)
-* Removed buggy profiles
-* Small changes
+* Removed buggy profiles.
+* Small changes.
 
 v.3.0 (15 April 2017)
 * Better saving and loading.
