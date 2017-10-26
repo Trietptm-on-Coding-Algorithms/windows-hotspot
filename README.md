@@ -1,5 +1,5 @@
 # WinSpot
-![latest version](https://img.shields.io/github/release/phoenix1747/windows-hotspot.svg?style=flat-square) ![open issues](https://img.shields.io/github/issues-raw/phoenix1747/windows-hotspot.svg?style=flat-square) ![Downloads](https://img.shields.io/github/downloads/phoenix1747/windows-hotspot/total.svg?style=flat-square)
+![latest version](https://img.shields.io/github/release/phoenix1747/windows-hotspot.svg?style=flat-square) ![open issues](https://img.shields.io/github/issues-raw/phoenix1747/windows-hotspot.svg?style=flat-square) ![Downloads](https://img.shields.io/github/downloads/phoenix1747/windows-hotspot/latest/total.svg?style=flat-square)
 
 
 WinSpot lets you easily create a WiFi hotspot with Windows 10 and earlier.
