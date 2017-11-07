@@ -14,6 +14,8 @@ You don't have to know any console commands, WinSpot will do everything for you!
 * Tiny package size.
 * No installation required - this file works anywhere!
 
+[winspot](https://phoenix1747.github.io/host/winspot.png)
+
 ---
 
 ### Requirements:
