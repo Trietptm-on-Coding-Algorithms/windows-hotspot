@@ -10,7 +10,7 @@ You don't have to know any console commands, WinSpot will do everything for you!
 ### Features:
 
 * Very easy to use - just provide your network SSID (name) and a PSK (password).
-* Working internet connection not REQUIRED, but recommended if you actually want to use the hotspot for something useful.
+* Working internet connection not required, but recommended if you actually want to use the hotspot for something useful.
 * Tiny package size.
 * No installation required - this file works anywhere!
 
@@ -20,8 +20,8 @@ You don't have to know any console commands, WinSpot will do everything for you!
 
 ### Requirements:
 
-* Windows - any new version (Win 7+) will work.
-* A Wireless Adapter which is able to host a network - obviously.
+* Windows - any newer version (Win 7+) will work.
+* A wireless network adapter which is able to host a network - obviously.
 
 ---
 
